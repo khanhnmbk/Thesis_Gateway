@@ -1,0 +1,76 @@
+{
+    "deviceName": "demo S7-1200",
+    "deviceID": "DHBK2019-2",
+    "longitude": "",
+    "latitude": "",
+    "period": "1000",
+    "PLCs": [
+        {
+            "name": "PLC1200",
+            "protocol": "S7-connection",
+            "ipAddress": "192.168.1.121",
+            "variables": [
+                {
+                    "name": "StartLight",
+                    "dataType": "Bool",
+                    "plc": "PLC1200",
+                    "address": "M0.0",
+                    "access": "read/write",
+                    "unit": "",
+                    "isAlarm": true,
+                    "alarmType": "0",
+                    "parameters": {
+                        "lolo": "",
+                        "lo": "",
+                        "hi": "",
+                        "hihi": "",
+                        "deadband": ""
+                    },
+                    "isHistory": false
+                },
+                {
+                    "name": "StopLight",
+                    "dataType": "Bool",
+                    "plc": "PLC1200",
+                    "address": "Q0.1",
+                    "access": "read/write",
+                    "unit": "",
+                    "isAlarm": false,
+                    "alarmType": null,
+                    "parameters": {
+                        "lolo": null,
+                        "lo": null,
+                        "hi": null,
+                        "hihi": null,
+                        "deadband": null
+                    },
+                    "isHistory": false
+                },
+                {
+                    "name": "Speed",
+                    "dataType": "Double",
+                    "plc": "PLC1200",
+                    "address": "MD1",
+                    "access": "read/write",
+                    "unit": "RPM",
+                    "isAlarm": true,
+                    "alarmType": "1",
+                    "parameters": {
+                        "lolo": "100",
+                        "lo": "400",
+                        "hi": "1000",
+                        "hihi": "1400",
+                        "deadband": "50"
+                    },
+                    "isHistory": false
+                }
+            ]
+        }
+    ],
+    "user": "nmkhanhbk@gmail.com",
+    "creationTime": "5/26/2019, 4:32:22 PM",
+    "lastActive": "",
+    "published": false,
+    "status": false,
+    "fileName": "deviceConfig_DHBK2019-2.json"
+}

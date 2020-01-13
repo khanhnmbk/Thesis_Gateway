@@ -1,0 +1,58 @@
+{
+    "deviceName": "OPC",
+    "deviceID": "OPCUA",
+    "longitude": 10,
+    "latitude": 10,
+    "period": 1000,
+    "PLCs": [
+        {
+            "name": "PLC1",
+            "protocol": "S7-connection",
+            "ipAddress": "192.168.100.150",
+            "variables": [
+                {
+                    "name": "StartLight",
+                    "dataType": "Bool",
+                    "plc": "PLC1",
+                    "address": "M0.0",
+                    "access": "read",
+                    "unit": "",
+                    "isAlarm": false,
+                    "alarmType": null,
+                    "parameters": {
+                        "lolo": null,
+                        "lo": null,
+                        "hi": null,
+                        "hihi": null,
+                        "deadband": null
+                    },
+                    "isHistory": false
+                },
+                {
+                    "name": "Speed",
+                    "dataType": "Double",
+                    "plc": "PLC1",
+                    "address": "ns=3;s=\"Speed\"",
+                    "access": "read",
+                    "unit": "",
+                    "isAlarm": false,
+                    "alarmType": null,
+                    "parameters": {
+                        "lolo": null,
+                        "lo": null,
+                        "hi": null,
+                        "hihi": null,
+                        "deadband": null
+                    },
+                    "isHistory": false
+                }
+            ]
+        }
+    ],
+    "user": "nmkhanhbk@gmail.com",
+    "creationTime": "2019-06-01 19:22:27",
+    "lastActive": "2019-06-06 15:01:46",
+    "published": false,
+    "status": false,
+    "fileName": "deviceConfig_OPCUA.json"
+}
